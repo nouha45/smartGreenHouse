@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CrudTechnicienController">
+   <children>
+      <Label layoutX="14.0" layoutY="30.0" styleClass="backgrnd" stylesheets="@../application/application.css" text="Rechercher" textFill="#417e58">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_rech" layoutX="106.0" layoutY="28.0" onAction="#rechercherTech" promptText="Identifiant" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_nom" layoutX="26.0" layoutY="74.0" prefHeight="25.0" prefWidth="200.0" promptText="Nom" styleClass="text-field" stylesheets="@../application/application.css" AnchorPane.leftAnchor="26.0" />
+      <TextField fx:id="txt_email" layoutX="26.0" layoutY="124.0" prefHeight="25.0" prefWidth="200.0" promptText="Email" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_num" layoutX="26.0" layoutY="180.0" prefHeight="25.0" prefWidth="200.0" promptText="Numéro de téléphone" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_log" layoutX="252.0" layoutY="124.0" prefHeight="25.0" prefWidth="200.0" promptText="Login" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_pass" layoutX="471.0" layoutY="124.0" prefHeight="25.0" prefWidth="200.0" promptText="Mot de passe" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_cin" layoutX="471.0" layoutY="74.0" prefHeight="25.0" prefWidth="200.0" promptText="CIN" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TextField fx:id="txt_prenom" layoutX="250.0" layoutY="74.0" prefHeight="25.0" prefWidth="200.0" promptText="Prénom" styleClass="text-field" stylesheets="@../application/application.css" />
+      <TableView fx:id="table_tech" layoutX="29.0" layoutY="251.0" prefHeight="150.0" prefWidth="409.0" stylesheets="@../application/application.css" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="95.0">
+        <columns>
+          <TableColumn fx:id="clt_id" prefWidth="40.6666841506958" text="Id" />
+          <TableColumn fx:id="clt_nom" prefWidth="63.999996185302734" text="Nom" />
+            <TableColumn fx:id="clt_prenom" prefWidth="66.00000762939453" text="Prénom" />
+            <TableColumn fx:id="clt_cin" prefWidth="71.33334350585938" text="CIN" />
+            <TableColumn fx:id="clt_email" prefWidth="100.66667175292969" text="Email" />
+            <TableColumn fx:id="clt_tel" prefWidth="138.0" text="Téléphone" />
+            <TableColumn fx:id="clt_salaire" prefWidth="99.33334350585938" text="Salaire" />
+        </columns>
+      </TableView>
+      <Button layoutX="163.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#addTech" prefHeight="25.0" prefWidth="95.0" styleClass="buttons" stylesheets="@../application/application.css" text="Ajouter" />
+      <Button layoutX="269.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#editTech" prefHeight="25.0" prefWidth="95.0" styleClass="buttons" stylesheets="@../application/application.css" text="Modifier" />
+      <Button layoutX="371.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#deleteTech" prefHeight="25.0" prefWidth="95.0" styleClass="buttons" stylesheets="@../application/application.css" text="Supprimer" />
+      <TextField fx:id="txt_salaire" layoutX="250.0" layoutY="180.0" prefHeight="25.0" prefWidth="200.0" promptText="Salaire" styleClass="text-field" stylesheets="@../application/application.css" />
+   </children>
+</AnchorPane>
