@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="-7.0" prefHeight="492.0" prefWidth="603.0" style="-fx-background-color: #D0F0C0;">
+         <children>
+            <Pane layoutX="63.0" layoutY="-308.0" prefHeight="536.0" prefWidth="427.0" rotate="56.3" style="-fx-background-color: #2E8B57; -fx-background-radius: 100;" />
+            <JFXButton layoutX="36.0" layoutY="170.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" />
+            <ImageView fitHeight="105.0" fitWidth="121.0" layoutX="75.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/Temperature%20sensor-modified.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="314.0" text="Temperature sensors">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="393.0" layoutY="164.0" prefHeight="169.0" prefWidth="182.0" styleClass="button1" stylesheets="@../application/application.css" />
+            <ImageView fitHeight="121.0" fitWidth="117.0" layoutX="426.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/Air%20humidity%20sensor-modified.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="421.0" layoutY="306.0" text="Air humidity sensor">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

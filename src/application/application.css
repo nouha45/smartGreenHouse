@@ -1,0 +1,17 @@
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+#labelwithimage {          
+    -fx-graphic: url("@../../../../Downloads/serre%20intelligente/images.jpg");
+    -fx-graphic-text-gap : 10;
+}
+.button1
+{
+-fx-background-color : #89E5A8 ;
+-fx-background-radius :  20;
+}

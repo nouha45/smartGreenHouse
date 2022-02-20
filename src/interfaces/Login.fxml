@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.cells.editors.base.GenericEditableTableCell?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="815.0" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.LoginConroller">
+   <children>
+      <Pane prefHeight="546.0" prefWidth="400.0" style="-fx-background-color: #67C68B;">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="182.0" prefHeight="236.0" prefWidth="423.0" text="Smart Greenhouse" textAlignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2274881516587678">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.43164393305778503" green="0.7368420958518982" blue="0.3206627666950226" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="64.0" prefHeight="54.0" prefWidth="261.0" text="Welcome To" textFill="#4d6145">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="109.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/serre%20intelligente/greenhouse.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="418.0" prefHeight="17.0" prefWidth="166.0" text="Contact us">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="463.0" prefHeight="17.0" prefWidth="166.0" text="+212 (0) 6 15 14 37 81" />
+            <Label layoutX="75.0" layoutY="489.0" text="smartgreenhouse.miola@gmail.com" />
+            <Label layoutX="78.0" layoutY="515.0" prefHeight="17.0" prefWidth="150.0" text="Rabat, Morroco" />
+            <FontAwesomeIconView glyphName="PHONE" layoutX="45.0" layoutY="479.0" size="20" />
+            
+            <GenericEditableTableCell layoutX="58.0" layoutY="221.0" />
+            <GenericEditableTableCell layoutX="53.0" layoutY="184.0" />
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="43.0" layoutY="505.0" size="20" />
+            <ImageView fitHeight="31.0" fitWidth="20.0" layoutX="48.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/map.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="218.0" layoutX="516.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="loginButton" layoutX="439.0" layoutY="436.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: #67C68B;" text="Login" textFill="#070707" />
+      <TextField fx:id="lginTextFied" layoutX="473.0" layoutY="313.0" prefHeight="35.0" prefWidth="267.0" promptText="Login" styleClass="text-field" stylesheets="@../application/application.css" />
+      <Button fx:id="cancelButton" layoutX="645.0" layoutY="436.0" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: #67C68B;" text="Cancel" />
+      <Label layoutX="408.0" layoutY="208.0" prefHeight="35.0" prefWidth="409.0" text="If you need an account, you can request it from an administrator" textFill="#49614f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="522.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/serre%20intelligente/login.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordTextFied" layoutX="473.0" layoutY="361.0" prefHeight="35.0" prefWidth="267.0" promptText="Password" styleClass="text-field" stylesheets="@../application/application.css" />
+      <FontAwesomeIconView fill="#aea4a4" glyphName="USER" layoutX="441.0" layoutY="338.0" size="20" />
+      <FontAwesomeIconView fill="#aea5a5" glyphName="LOCK" layoutX="442.0" layoutY="383.0" size="20" text="" />
+      <Label fx:id="labelError" alignment="CENTER" layoutX="455.0" layoutY="243.0" prefHeight="18.0" prefWidth="292.0" textFill="#e82222" />
+      <JFXComboBox fx:id="jfoenixCombobox" layoutX="473.0" layoutY="273.0" prefHeight="27.0" prefWidth="267.0" promptText="Select the category" />
+   </children>
+</fx:root>
